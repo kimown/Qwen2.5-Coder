@@ -63,3 +63,7 @@
    ```
 
 
+
+https://github.com/yongzhuo/Qwen-SFT
+
+https://github.com/datawhalechina/self-llm/blob/master/models/Qwen2.5-Coder/Qwen2.5-Coder-7B-Instruct%20Lora%20%E5%BE%AE%E8%B0%83.md
