@@ -31,10 +31,10 @@ cd finetuning/sft
 pip install -r requirements.txt
 
 bash ./scripts/binarize_data.sh ../../../sft.jsonl ../../../sft_processed.jsonl ../../../qwen2.5-coder-7B
-ls sft_processed.jsonl
+ls ../../../sft_processed.jsonl.npy
 
 mkdir adapter
-bash ./Qwen2.5-Coder/finetuning/sft/scripts/sft_qwencoder.sh ./sft_processed.jsonl ./qwen2.5-coder-7B ./adapter
+bash ./scripts/sft_qwencoder.sh ../../../sft_processed.jsonl.npy ../../../qwen2.5-coder-7B ./adapter
 
 mkdir merged_models
 bash ./scripts/merge_adapter.sh ../qwen2.5-coder-7B ./sft_model/xxx.pth ./merged_models/model1
