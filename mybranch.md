@@ -87,6 +87,7 @@ print(generated_text)
 ```
 
 
+
 ```train.sh
 mkdir qwen25coder
 cd qwen25coder
@@ -110,6 +111,13 @@ pip install  packaging wheel jsonlines  datasets peft deepspeed
 
 bash ./scripts/binarize_data.sh ../../../sft.jsonl ../../../sft_processed.jsonl ../../../qwen2.5-coder-7B
 ls ../../../sft_processed.jsonl.npy
+
+
+huggingface-cli scan-cache
+pip install -U huggingface_hub
+export HF_ENDPOINT=https://hf-mirror.com
+huggingface-cli download facebook/opt-125m
+huggingface-cli delete-cache // enter选中
 
 mkdir adapter
 bash ./scripts/sft_qwencoder.sh ../../../sft_processed.jsonl.npy ../../../qwen2.5-coder-7B ./adapter
