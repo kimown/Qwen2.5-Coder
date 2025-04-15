@@ -87,8 +87,22 @@ print(generated_text)
 ```
 
 
+deepspeed
+
+https://github.com/deepspeedai/DeepSpeed/issues/2268
+https://github.com/deepspeedai/DeepSpeed/issues/5659#issuecomment-2234427361
+https://zhuanlan.zhihu.com/p/642819809
+
+
 
 ```train.sh
+python3.9 -m venv tutorial-env
+source tutorial-env/bin/activate
+python
+
+pip install deepspeed importlib_metadata
+
+
 mkdir qwen25coder
 cd qwen25coder
 git clone https://github.com/kimown/Qwen2.5-Coder.git
