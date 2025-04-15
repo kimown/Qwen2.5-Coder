@@ -105,7 +105,7 @@ pip install -r requirements.txt
 cd finetuning/sft
 pip install -r requirements.txt
 
-pip install  packaging wheel jsonlines  datasets peft
+pip install  packaging wheel jsonlines  datasets peft deepspeed
 
 
 bash ./scripts/binarize_data.sh ../../../sft.jsonl ../../../sft_processed.jsonl ../../../qwen2.5-coder-7B
