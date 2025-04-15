@@ -96,7 +96,7 @@ modelscope download Qwen/Qwen2.5-Coder-7B --local_dir ./qwen2.5-coder-7B
 modelscope download qwen/Qwen2-Audio-7B-Instruct --local_dir ./qwen2.5-coder-7B-Instruct
 
 ls
-Qwen2.5-Coder  qwen2.5-coder-7B  qwen2.5-coder-7B-Instruct  sft.jsonl
+Qwen2.5-Coder  qwen2.5-coder-7B  qwen2.5-coder-7B-Instruct  sft.jsonl opt-125m
 
 cd Qwen2.5-Coder
 python3 -m venv tutorial-env
@@ -121,6 +121,8 @@ huggingface-cli delete-cache // enter选中
 # MODELSCOPE_CACHE="/root/.cache/huggingface/" modelscope download --model="Qwen/Qwen2.5-0.5B-Instruct" 
 # https://github.com/CycloneBoy/pdf_table/blob/main/.env.example
 # https://github.com/modelscope/modelscope/issues/831
+modelscope download Xorbits/opt-125m --local_dir ./opt-125m
+
 
 mkdir adapter
 bash ./scripts/sft_qwencoder.sh ../../../sft_processed.jsonl.npy ../../../qwen2.5-coder-7B ./adapter
