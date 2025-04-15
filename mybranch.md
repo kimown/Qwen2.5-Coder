@@ -123,6 +123,8 @@ pip install -r requirements.txt
 pip install  packaging wheel jsonlines  datasets peft deepspeed tensorboardX
 
 
+pip install transformers==4.46 // https://github.com/huggingface/trl/issues/2445#issuecomment-2523106485
+
 bash ./scripts/binarize_data.sh ../../../sft.jsonl ../../../sft_processed.jsonl ../../../qwen2.5-coder-7B
 ls ../../../sft_processed.jsonl.npy
 
