@@ -125,5 +125,28 @@ sys.path
 ```
 
 
+HF_ENDPOINT=https://hf-mirror.com
+
+https://github.com/huggingface/transformers/issues/34841
+
+https://discuss.huggingface.co/t/requests-exceptions-httperror-429-client-error-too-many-requests/126019
+
+
+
+"torch.distributed.elastic.multiprocessing.errors.ChildFailedError:"
+https://discuss.pytorch.org/t/understanding-the-torch-distributed-elastic-multiprocessing-errors-childfailederror-error/212774
+
+https://discuss.huggingface.co/t/torch-distributed-elastic-multiprocessing-errors-childfailederror/28242/7
+
+https://blog.csdn.net/weixin_43135178/article/details/131716441
+
+https://discuss.pytorch.org/t/debugging-for-error-from-torch-distributed-run/143457/3
+
+https://blog.csdn.net/2301_77554343/article/details/137038882
+
+https://zhuanlan.zhihu.com/p/696459314
+
+
+
 角色扮演 甄嬛
 https://github.com/datawhalechina/self-llm/blob/master/models/Qwen2.5-Coder/Qwen2.5-Coder-7B-Instruct%20Lora%20%E5%BE%AE%E8%B0%83.md
