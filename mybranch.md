@@ -118,7 +118,7 @@ pip install -U huggingface_hub
 export HF_ENDPOINT=https://hf-mirror.com
 huggingface-cli download facebook/opt-125m
 huggingface-cli delete-cache // enter选中
-# MODELSCOPE_MODULES_CACHE="/root/.cache/huggingface/" MODELSCOPE_CACHE="/root/.cache/huggingface/" modelscope download --model="Qwen/Qwen2.5-0.5B-Instruct"
+# MODELSCOPE_CACHE="/root/.cache/huggingface/" modelscope download --model="Qwen/Qwen2.5-0.5B-Instruct" https://github.com/modelscope/modelscope/issues/831
 
 
 mkdir adapter
