@@ -46,8 +46,9 @@ echo "Pretrained Model" ${PRETRAINED_MODEL}
 echo "WORLD_SIZE" $WORLD_SIZE "MICRO BATCH SIZE" $MICRO_BATCH_SIZE "GRAD_ACCU" $GRAD_ACCU
 echo $DISTRIBUTED_ARGS
 
-cd ROOT_PATH="/path/to/sft/";
-torchrun ${DISTRIBUTED_ARGS} train.py \
+#cd ROOT_PATH="/path/to/sft/";
+#torchrun ${DISTRIBUTED_ARGS} train.py \
+torchrun --standalone --nnodes=1 --nproc_per_node=1 train.py \
     --model_name_or_path  ${PRETRAINED_MODEL} \
     --data_path $DATA_PATH \
     --model_max_length ${MAX_LENGTH} \
