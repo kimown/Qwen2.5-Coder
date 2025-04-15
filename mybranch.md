@@ -137,6 +137,14 @@ import sys
 sys.path
 ```
 
+https://aistudio.baidu.com/paddle/forum/topic/show/992790
+https://github.com/QwenLM/Qwen/issues/428
+
+cpu 15
+mem 256
+gpu a800 80g
+
+
 
 eth0
 ifconfig
