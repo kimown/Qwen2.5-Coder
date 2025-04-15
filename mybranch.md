@@ -105,6 +105,9 @@ pip install -r requirements.txt
 cd finetuning/sft
 pip install -r requirements.txt
 
+pip install  packaging wheel jsonlines  datasets peft
+
+
 bash ./scripts/binarize_data.sh ../../../sft.jsonl ../../../sft_processed.jsonl ../../../qwen2.5-coder-7B
 ls ../../../sft_processed.jsonl.npy
 
