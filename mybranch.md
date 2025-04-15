@@ -144,7 +144,7 @@ mkdir adapter
 bash ./scripts/sft_qwencoder.sh ../../../sft_processed.jsonl.npy ../../../qwen2.5-coder-7B ./adapter
 
 mkdir merged_models
-bash ./scripts/merge_adapter.sh ../qwen2.5-coder-7B ./sft_model/xxx.pth ./merged_models/model1
+bash ./scripts/merge_adapter.sh ../../../qwen2.5-coder-7B ./adapter/checkpoint-3 ./merged_models
 
 
 pip show vllm
