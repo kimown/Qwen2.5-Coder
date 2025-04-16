@@ -186,6 +186,9 @@ https://zhuanlan.zhihu.com/p/685313872
 https://github.com/QwenLM/Qwen/issues/578
 
 
+https://discuss.chatglm.cn/t/topic/11
+> 绝大部分是由于训练集过小并且训练步数过多导致，可以适当降低training step。
+
 微调后重复
 https://github.com/QwenLM/Qwen2.5/issues/198
 
