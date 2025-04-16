@@ -168,6 +168,22 @@ bash ./scripts/merge_adapter.sh ../../../qwen2.5-coder-7B ./adapter/checkpoint-3
 ```
 
 
+
+tensorboard 全局命令
+
+https://pytorch.org/docs/stable/tensorboard.html
+
+指标https://zhuanlan.zhihu.com/p/35675109
+
+
+```
+pip install tensorboard
+tensorboard --logdir=./adapter/runs/ --bind_all
+```
+
+
+
+
 https://aistudio.baidu.com/paddle/forum/topic/show/992790
 https://github.com/QwenLM/Qwen/issues/428
 https://github.com/QwenLM/Qwen/issues/428
