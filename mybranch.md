@@ -201,8 +201,9 @@ https://help.aliyun.com/zh/model-studio/rag-knowledge-base/
 
 https://edu.aliyun.com/course/3126500/lesson/342570338
 
-
-
+知识图谱rag
+https://cloud.tencent.com/developer/article/2459932
+https://juejin.cn/post/7441853866494869514
 
 
 https://aistudio.baidu.com/paddle/forum/topic/show/992790
