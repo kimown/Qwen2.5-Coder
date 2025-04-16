@@ -180,7 +180,7 @@ def find_latest_checkpoint(output_dir):
 
 
 class CustomTrainer(Trainer):
-    def log(self, logs: Dict[str, float]) -> None:
+    def log(self, logs: Dict[str, float], start_time: Optional[float] = None) -> None:
         """
         Log `logs` on the various objects watching training.
 
