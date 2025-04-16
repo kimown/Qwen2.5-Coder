@@ -181,6 +181,21 @@ pip install tensorboard
 tensorboard --logdir=./adapter/runs/ --bind_all
 ```
 
+loss多少
+https://zhuanlan.zhihu.com/p/685313872
+https://github.com/QwenLM/Qwen/issues/578
+
+
+微调后没有学习到知识？
+
+微调 增强风格、幻觉、准确率
+
+https://github.com/QwenLM/Qwen/issues/541
+https://xuqiwei1986.feishu.cn/wiki/PegewHgQ9idDnUkNr3bc4F3Fnbb
+
+https://github.com/THUDM/ChatGLM3/discussions/253
+
+
 
 
 
