@@ -143,15 +143,30 @@ modelscope download Xorbits/opt-125m --local_dir ./opt-125m
 mkdir adapter
 bash ./scripts/sft_qwencoder.sh ../../../sft_processed.jsonl.npy ../../../qwen2.5-coder-7B ./adapter
 
-mkdir merged_models
-bash ./scripts/merge_adapter.sh ../../../qwen2.5-coder-7B ./adapter/checkpoint-3 ./merged_models
-
-
 pip show vllm
 python
 import sys
 sys.path
 ```
+
+log方法
+https://github.com/QwenLM/Qwen2.5-Coder/issues/394
+https://github.com/huggingface/trl/issues/2445
+
+
+
+
+使用lora
+https://discuss.huggingface.co/t/can-not-find-adapter-config-json-using-peftconfig-from-pretrained/42080/7
+
+https://github.com/huggingface/text-generation-inference/issues/1334
+
+```
+mkdir merged_models
+bash ./scripts/merge_adapter.sh ../../../qwen2.5-coder-7B ./adapter/checkpoint-3 ./merged_models
+
+```
+
 
 https://aistudio.baidu.com/paddle/forum/topic/show/992790
 https://github.com/QwenLM/Qwen/issues/428
