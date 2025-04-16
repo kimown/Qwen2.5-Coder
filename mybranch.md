@@ -186,6 +186,11 @@ https://zhuanlan.zhihu.com/p/685313872
 https://github.com/QwenLM/Qwen/issues/578
 
 
+微调后重复
+https://github.com/QwenLM/Qwen2.5/issues/198
+
+https://github.com/modelscope/ms-swift/issues/519
+
 微调后没有学习到知识？
 
 微调 增强风格、幻觉、准确率
