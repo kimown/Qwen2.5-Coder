@@ -196,6 +196,12 @@ https://xuqiwei1986.feishu.cn/wiki/PegewHgQ9idDnUkNr3bc4F3Fnbb
 https://github.com/THUDM/ChatGLM3/discussions/253
 
 
+通过rag增加知识
+https://help.aliyun.com/zh/model-studio/rag-knowledge-base/
+
+https://edu.aliyun.com/course/3126500/lesson/342570338
+
+
 
 
 
