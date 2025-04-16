@@ -1,7 +1,7 @@
 export NCCL_IB_TC=136
 export NCCL_IB_SL=5
 export NCCL_IB_GID_INDEX=3
-export NCCL_SOCKET_IFNAME=bond0
+export NCCL_SOCKET_IFNAME=eth0
 export NCCL_DEBUG=INFO
 export NCCL_IB_HCA=mlx5
 export NCCL_IB_TIMEOUT=22
@@ -47,8 +47,8 @@ echo "WORLD_SIZE" $WORLD_SIZE "MICRO BATCH SIZE" $MICRO_BATCH_SIZE "GRAD_ACCU" $
 echo $DISTRIBUTED_ARGS
 
 #cd ROOT_PATH="/path/to/sft/";
-#torchrun ${DISTRIBUTED_ARGS} train.py \
-torchrun --standalone --nnodes=1 --nproc_per_node=1 train.py \
+TORCH_DISTRIBUTED_DEBUG=DETAIL torchrun ${DISTRIBUTED_ARGS} train.py \
+#torchrun --standalone --nnodes=1 --nproc_per_node=1 train.py \
     --model_name_or_path  ${PRETRAINED_MODEL} \
     --data_path $DATA_PATH \
     --model_max_length ${MAX_LENGTH} \
