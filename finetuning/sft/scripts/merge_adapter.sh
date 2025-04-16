@@ -7,5 +7,5 @@ OUTPUT_PATH=${3}
 INPUT_MODEL_PATH=${INPUT_MODEL_PATH:-"./pretrained_models"}
 INPUT_ADAPTER_PATH=${INPUT_ADAPTER_PATH:-"./adapter"}
 OUTPUT_PATH=${OUTPUT_PATH:-"./merged_models"}
-python merge_adapter.py -input_model_path ${INPUT_MODEL_PATH} -input_adapter_path ${INPUT_ADAPTER_PATH} -output_path ${OUTPUT_PATH}
+python merge_adapter.py --base_model_path ${INPUT_MODEL_PATH} --train_adapters_path ${INPUT_ADAPTER_PATH} --output_path ${OUTPUT_PATH}
 
