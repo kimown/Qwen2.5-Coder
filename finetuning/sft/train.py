@@ -19,7 +19,8 @@ IGNORE_INDEX = -100 #default ignore_index = 100 in transformers
 logging.basicConfig(level=logging.DEBUG)  
 @dataclass
 class ModelArguments:
-    model_name_or_path: Optional[str] = field(default="facebook/opt-125m")
+    #model_name_or_path: Optional[str] = field(default="facebook/opt-125m")
+    model_name_or_path: Optional[str] = field(default="../../../opt-125m")
     use_flash_attention: bool = field(default=False, metadata={"help": "Whether to use Flash Attention."})
 
 @dataclass
